@@ -16,6 +16,10 @@ class CreateSensorsTable extends Migration
         Schema::create('sensors', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('name');
+            $table->double('long');
+            $table->double('lat');
+            $table->string('status');
         });
     }
 

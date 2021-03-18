@@ -10,7 +10,10 @@ class Sensor extends Model
     use HasFactory;
 
     protected $fillable = [
-            'name', 'long', 'lat', 'status',  
+            'name',
+            'long',
+            'lat',
+            'status',  
         ];
 
         public function orders(){
